@@ -1,0 +1,285 @@
+{"key":"time", "name": "Time", "desc": "Time", "units": "s", "volume":0, "mass":0, "store":"abstract"}
+{"key":"heat", "name": "Heat", "tag":["environmental"], "units":"w", "volume":0, "mass":0, "store":"abstract"}
+{"key":"light", "name": "Light", "tag":["environmental"], "units":"w", "volume":0, "mass":0, "store":"none"}
+{"key":"torque", 
+    "name": "Torque", "desc": "Power suitable for turning a shaft or wheel, to turn a machine, or move a vehicle",
+    "units": "w", "volume": 0, "mass": 0, "mass": 0, "store":"none"}
+{"key":"power", "name": "Electrical Power", "desc":"Raw electricity, suitable for powering lights or electronics",
+    "tag":["electricity"], "units": "w", "volume": 0, "mass": 0, "store":"power"}
+{"key":"credits", "name": "Credits", "desc":"Standard Futuristic Unit of Money", "units": "Cr", "volume": 0, "mass": 0, "store":"abstract"}
+
+{"key":"labor", "name": "Labor", "desc":"Unskilled labor from any able-bodied humanoid", "units": "t", "volume": 0, "mass": 0, "mass": 0, "store":"none"}
+{"key":"housing", "name":"Housing", "desc":"1 unit of house houses a single adult human (adolescents live with their parents)"}
+
+{"key":"discrete", "name":"Base Discrete Resource", "units":"kg", "store":"discrete"}
+{"key":"bulk", "name":"Base Bulk Resource", "units":"kg", "store":"bulk"}
+{"key":"gas", "name":"Base Gas Resource", "units":"kg", "density":1, "tag":[], "store":"gas"}
+{"key":"liquid", "name":"Base Liquid Resource", "units":"L", "density":1, "tag":["air"], "store":"gas"}
+{"key":"personnel", "name":"Seating for Personnel in-transport", "units":"Seats", "store":"personnel"}
+
+{"key":"oxygen", "name": "Oxygen", "super":"gas", "tag":["air"]}
+{"key":"co2", "name": "CO2", "super":"gas", "tag":["air"]}
+{"key":"water", "name": "Water", "super":"liquid", "tag":["water"]}
+{"key":"steam", "name": "Steam", "super":"gas", "tag":["water"], "store":"none"}
+{"key":"rock", "name":"Rock (Generic)", "density":2.5, "store":"bulk"}
+
+{"key":"water_ice", "name": "Water Ice", "super":"bulk", "tag":["ice"]}
+{"key":"methane_ice", "name": "Methane Ice", "super":"bulk", "tag":["ice"]}
+{"key":"dry_ice", "name": "Dry Ice", "super":"bulk", "tag":["ice"]}
+
+{"key":"timber", "name":"Timber", "density":1.5, "tag":["fuel","timber"], "store":"bulk"}
+{"key":"lumber", "name":"Lumber", "density":1.5, "tag":["fuel","timber"], "store":"bulk"}
+{"key":"wood_pulp", "name":"Wood_pulp", "density":1.5, "store":"bulk"}
+{"key":"biomass", "name":"Biomass", "store":"bulk"}
+
+{"key":"methane", "name":"Methane", "density":0.7, "tag":["fuel"], "super":"gas"}
+{"key":"coal", "name":"Coal", "density":2, "tag":["fuel"], "super":"rock"}
+{"key":"crude_oil", "name":"Crude Oil", "density":0.85,"tag":["fuel","oil"], "super":"liquid"}
+{"key":"fuel_oil", "name":"Fuel Oil", "density":0.8, "tag":["fuel","oil"], "super":"liquid"}
+{"key":"gasoline", "name":"Gasoline", "density":0.76, "tag":["fuel","oil"], "desc": "common hydrocarbon fuel, widely used for ground vehicles", "super":"liquid"}
+{"key":"diesel", "name":"Diesel", "desc": "common hydrocarbon fuel, used for heavy machinery and power generation", "density": 0.85, "super":"liquid"}
+{"key":"kerosene", "name":"Kerosene", "units":"L", "density":0.7, "tag":["fuel","oil"], "desc": "common hydrocarbon fuel, used for aviation", "super":"liquid"}
+
+{"key":"deuterium", "name":"Deuterium (H2)", "density":0.005, "tag":["fusion","fuel"], "store":"gas"}
+
+{"key":"explosives_gunpowder", "name":"Gunpowder", "tag":["weapons"], "store":"b"}
+{"key":"propellant_solid_rocket", "name":"Solid Rocket Propellant", "desc":"Consisting of mostly: Ammonium Perchlorate (APCP)", "tag":["weapons"], "store":"b"}
+
+{"key":"spare_parts", "name": "Spare Parts", "tag":["maintenance","item"], "store":"b"}
+
+{"key":"piston_engine_5kw", "name":"Small Piston Engine; 5kW rating; may use any type of gas", "store":"d"}
+{"key":"piston_engine_100kw", "name":"Small 200cc Gas Engine", "store":"d"}
+{"key":"piston_engine_250kw", "name":"?? ??cc Gas Engine", "store":"d"}
+{"key":"piston_engine_2mw", "name":"?? ??cc Gas Engine", "store":"d"}
+
+{"key":"gas_turbine_2mw", "name":"Small Gas Turbine", "store":"d"}
+
+{"key":"electric_generator_5kw", "name":"Small portable generator"}
+{"key":"electric_motor_5kw", "name":"Small portable motor"}
+
+{"key":"battery", "name":"Batteries", "density":"2.5","store":"d"}
+{"key":"batteries_lipo", "name":"Lithium-Polymer Batteries", "super":"battery"}
+{"key":"batteries_nimh", "name":"Nickel-Metal-Hydride Batteries", "super":"battery"}
+{"key":"fuel_cell", "name":"Fuel Cell", "desc":"Extract electricity from a variety of biomass sources", "density":1.6, "store":"d"}
+
+{"key":"basic_hand_tools", "name":"Hand Tools", "desc": "Basic Handheld Power Tools: usable for all basic construction"}
+{"key":"power_tools", "name":"Power Tools", "desc": "Power Tools; weildable by individual workers: usable for all basic construction"}
+{"key":"heavy_tools", "name":"Heavy Tools", "desc": "Simple, labor-intensive tools; too big to be carried by an individual; used for heavy industry"}
+{"key":"automated_tools", "name":"Automated Tools", "desc": "more labor-efficient tools; too big to be carried by an individual; used for heavy industry"}
+{"key":"robotic_tools", "name":"Robotic Power Tools", "desc": "Completely automated; requires minimial labor/maintenance; too big to be carried by an individual; used for heavy industry"}
+
+{"key":"railgun_10mm", "name":"Light Railguns"}
+{"key":"railgun_50mm", "name":"Medium Railguns"}
+{"key":"railgun_120mm", "name":"Heavy Railguns"}
+{"key":"railgun_100mm", "name":"Howitzer Railguns"}
+
+{"key":"heavy_industrial_forge", "name":"heavy_industrial_forge"}
+{"key":"hydraulic_press", "name":"hydraulic_press"}
+{"key":"life_support_equipment", "name":"life_support_equipment"}
+
+{"key":"prop_airframe_t3", "name":"Propeller Airframe (T3)"}
+{"key":"missiles", "name":"Missiles"}
+{"key":"frame_ground_tank", "name":"Tank Chassis (20t)"}
+
+{"key":"weapon_small_armament", "name":"Small Arms"}
+{"key":"weapon_crew_serve_armament", "name":"Mounted Gun", "desc":"Example: crew-served, but dismounted weapon"}
+{"key":"weapon_auto_turret_armament", "name":"Samson Remote Weapon Turret"}
+
+{"key":"ammo_explosive_charge", "name":"High Explosive Demolition Charge", "tag":["weapons"], "store":"b"}
+
+{"key":"ammo_bullet_6mm", "name":"Bullets, 5.76mm"}
+{"key":"ammo_bullet_8mm", "name":"Bullets, 7.62mm"}
+{"key":"ammo_bullet_12mm", "name":"Bullets, 12.7mm", "desc":"(aka .50 Cal)"}
+{"key":"ammo_shell_18mm", "name":"Shotgun shells, 12gau==18.53mm", "desc":"(aka .50 Cal)"}
+{"key":"ammo_shell_35mm", "name":"Shells, 35mm"}
+{"key":"ammo_shell_60mm", "name":"Shells, 60mm"}
+{"key":"ammo_shell_90mm", "name":"Shells, 90mm"}
+{"key":"ammo_shell_120mm", "name":"Shells, 120mm"}
+
+{"key":"frame_ground_buggy", "name":"frame_ground_buggy"}
+{"key":"frame_ground_truck", "name":"frame_ground_truck"}
+{"key":"frame_naval_cruiser", "name":"frame_naval_cruiser"}
+{"key":"frame_naval_capitol", "name":"frame_naval_capitol"}
+{"key":"frame_naval_submarine", "name":"frame_naval_submarine"}
+
+{"key":"manure", "name": "Manure", "tag":["waste"]}
+{"key":"black_water", "name": "Waste Water (Sewage)", "tag":["waste","fluid"], "density":1.1}
+
+{"key":"food", "name": "Food","tag":["food"]}
+{"key":"grain", "name": "Grain", "tag":["farm","grain"], "super":"food"}
+{"key":"vegetables", "name":"Vegetables", "super":"food", "tag":["food","veggie","farm"]}
+{"key":"fruit", "name":"Fruit", "super":"food", "tag":["food","farm","fruit"]}
+{"key":"legume", "name":"Beans", "super":"food", "tag":["food","farm","legume"]}
+
+{"key":"corn", "name":"Corn (Grain)", "super":"grain"}
+{"key":"wheat", "name":"Wheat (Grain)", "super":"grain"}
+{"key":"rice", "name":"Rice", "super":"grain"}
+{"key":"soy", "name":"Soy", "super":"food"}
+{"key":"lentil", "name":"Lentil Beans", "super":"legume", "tag":["farm"]}
+{"key":"black_beans", "name":"Black Beans", "super":"legume", "tag":["farm"]}
+
+{"key":"edible_algae_paste", "name":"Algae (Edible)", "desc":"Uninspiring, But Nutritious.", "density": 0.8, "tag":["food","aquatic"]}
+
+{"key":"livestock", "name": "Live Stock", "tag":["livestock","farm"]}
+{"key":"chicken", "name": "Live Chickens", "volume":200, "mass":2.5, "super":"livestock"}
+{"key":"cow", "name": "Live Cows","volume":3000, "mass":1100, "super":"livestock"}
+{"key":"goat", "name": "Live Goats", "volume":400, "mass":140, "super":"livestock"}
+{"key":"pig", "name": "Live Pigs", "volume":600, "mass":250, "super":"livestock"}
+{"key":"sheep", "name": "Live Sheep", "volume":400, "mass":160, "super":"livestock"}
+
+{"key":"chicken_eggs", "name": "Eggs", "volume":12, "mass":0.050, "super":"food"}
+{"key":"raw_milk", "name": "Milk (Raw, Cow)", "density":1.0, "super":"food"}
+
+{"key":"meat", "name": "Meat", "density":1.2, "super":"food"}
+{"key":"chicken_meat", "name": "Chicken Meat", "super":"meat"}
+{"key":"beef", "name": "Beef", "super":"meat"}
+{"key":"goat_meat", "name": "Goat Meat", "super":"meat"}
+{"key":"pork", "name": "Pork", "super":"meat"}
+{"key":"mutton", "name": "Mutton", "super":"meat"}
+
+{"key":"bread", "name": "Bread", "density":0.1, "super":"food"}
+{"key":"pasta", "name": "Pasta", "density":0.1, "super":"food"}
+{"key":"cheese", "name": "Cheese", "density":0.5, "super":"food"}
+
+{"key":"potato", "name":"Carrot", "super":"vegetables"}
+{"key":"carrot", "name":"Carrot", "super":"vegetables"}
+{"key":"broccoli", "name":"Broccoli", "super":"vegetables"}
+
+{"key":"apple", "name":"Apples", "super":"fruit"}
+{"key":"bananas", "name":"Apples", "super":"fruit"}
+{"key":"peach", "name":"Peach", "super":"fruit"}
+
+{"key":"spices", "name":"Spices"}
+
+{"key":"beer", "name":"Beer", "tag":["alcohol","recreation"]}
+{"key":"liquor", "name":"Liquor", "tag":["alcohol","recreation"]}
+{"key":"wine", "name":"Wine", "tag":["alcohol","recreation"]}
+
+{"key":"ore", "name":"Ore", "super":"rock", "tag":["ore"]}
+{"key":"au_ore", "name":"Gold Ore", "super":"ore"}
+{"key":"al_ore", "name":"Bauxite", "desc":"(Aluminum Ore)", "super":"ore", "desc":"Aluminum Ore"}
+{"key":"cr_ore", "name":"Chromium Ore", "super":"ore"}
+{"key":"co_ore", "name":"Cobalt Ore", "super":"ore"}
+{"key":"cu_ore", "name":"Cuprite", "desc":"(Copper Ore)", "super":"ore"}
+{"key":"fe_ore", "name":"Magnetite Ore", "desc":"Iron Ore (Fe3O4)", "super":"ore"}
+{"key":"ge_ore", "name":"Germanium Ore", "super":"ore"}
+{"key":"li_ore", "name":"Lithium Ore", "super":"ore"}
+{"key":"ca_ore", "name":"Limestone", "desc":"Calcium Oxide (CaCO3) Ore", "super":"ore"}
+{"key":"mg_ore", "name":"Magnesium", "super":"ore"}
+{"key":"mo_ore", "name":"Molybdenum Ore", "super":"ore"}
+{"key":"mn_ore", "name":"Manganese Ore", "super":"ore"}
+
+{"key":"ni_ore", "name":"Nickel Ore", "super":"ore"}
+{"key":"si_ore", "name":"Silica Ore", "super":"ore"}
+{"key":"ti_ore", "name":"Ilmenite Ore", "desc":"(Titanium Ore)", "super":"ore"}
+{"key":"u_ore", "name":"Yellowcake Ore", "desc":"(Uranium Ore)", "super":"ore"}
+{"key":"w_ore", "name":"Tungsten Ore", "super":"ore"}
+{"key":"z_ore", "name":"Zinc Ore", "super":"ore"}
+
+{"key":"sodium_carbonate", "name":"Sodium Carbonate", "desc":"aka 'Soda Ash'", "super":"ore"}
+
+{"key":"metal_ingot", "name":"Metal Ingot", "units":"piece", "density":5.0}
+{"key":"al_ingot", "name":"Aluminum Ingot", "super":"metal_ingot", "density":2.7}
+{"key":"au_ingot", "name":"Gold Ingot", "super":"metal_ingot", "density":20.0}
+{"key":"brass_ingot", "name":"Brass Ingot", "super":"metal_ingot", "density":20.0}
+{"key":"carbon", "name":"Carbon (feedstock)"}
+{"key":"cu_ingot", "name":"Copper Ingot", "super":"metal_ingot", "density":20.0}
+{"key":"iron_ingot", "name":"Iron Ingots", "super":"metal_ingot"}
+{"key":"alloy_steel_ingot", "name":"Alloy Steel", "super":"metal_ingot"}
+{"key":"carbon_steel_ingot", "name":"Carbon Steel", "desc":"AKA 'Structural Steel'", "super":"metal_ingot"}
+{"key":"stainless_steel_ingot", "name":"Stainless Steel", "super":"metal_ingot"}
+{"key":"tool_steel_ingot", "name":"Tool Steel", "super":"metal_ingot"}
+{"key":"foam_metal", "name":"Foam Metal Alloy", "density":0.1}
+
+{"key":"ceramic", "name":"Ceramic", "desc":"Silicon-Based Industrial Ceramics", "density":2.4, "store":"b"}
+{"key":"glass", "name":"Glass", "super":"ceramic"}
+{"key":"cfrp", "name":"Carbon Fiber", "desc":"(Carbon_Fiber Reinforced Polymer)"}
+{"key":"plastic", "name":"Plastic"}
+{"key":"bio_polymer", "name":"Plastic", "desc":"biologic-derived plastic", "super":"plastic"}
+{"key":"oil_plastic", "name":"Plastic", "desc":"fossil-fuel-derived plastic", "super":"plastic"}
+
+{"key":"si_wafer", "name":"Silicon Semiconductor Wafers", "super":"ceramic", "tag":["electronics"]}
+{"key":"ge_wafer", "name":"Germanium Semiconductor Wafers", "super":"ceramic", "tag":["electronics"]}
+{"key":"microchip", "name":"Microchips", "desc":"Any microchips used for computers, communications and automation","tag":["electronics"]}
+{"key":"si_chip", "name":"Silicon Microchips", "desc":"Silicon_Based microchips", "super":"microchip"}
+{"key":"ge_chip", "name":"Germanium Microchips", "desc":"Any Germanium_Based microchips used for computers, communications and automation.   Especially useful for power delivery, but also substitutes for Silicon_based chips, if needed.", "super":"microchip"}
+
+{"key":"crushed_stone", "name":"Crushed Stone", "mass":2.0}
+{"key":"construction_blocks", "name":"Construction Blocks", "mass":2.0}
+{"key":"bricks", "name":"Bricks", "mass":2.0, "desc":"Fired, clay construction bricks"}
+
+{"key":"cement_mix_blocks", "name":"Cement Mix", "mass":2.0}
+
+{"key":"rail_gun_magnets", "name":"High_Gauss Magnets"}
+{"key":"high_power_components", "name":"Power Converters"}
+
+{"key":"service_robot", "name":"Service Robot"}
+
+{"key":"photonics", "name":"Photonic Curcuits"}
+{"key":"carbon_nano_tubes", "name":"Carbon Nano-Tubes"}
+{"key":"superconductor", "name":"Superconductor"}
+{"key":"supercapacitors", "name":"Supercapacitor"}
+
+{"key":"concrete", "name":"Concrete Mix"}
+{"key":"paper", "name":"Paper"}
+
+//  "rsc_combustion_exhaust", "name": "smoke", "tag": " tech1, waste, gas"}
+//  "rsc_flyash", "name": "Fly Ash",  "desc": "contains SiO2, CaO, Al2O3, Fe2O3, et al"}
+//  "rsc_ash", "name": "Potash",  "desc": "Contains Potassium Carbonate (KCO3), used as fertilizer", "tag": " tech1, waste, solid"}
+
+// civilian personnel
+{"key":"person", "name":"Generic Person", "tag":["human"]}
+{"key":"xp", "name":"Experience Points", "tag":["human","labor"]}
+{"key":"worker",  "name":"Generic Worker", "super":"person", "tag":["human"]}
+{"key":"soldier", "name":"Generic Worker", "super":"person", "tag":["soldier"]}
+{"key":"farmer",  "name":"Farmhand", "super":"worker"}
+{"key":"mechanic", "name":"Mechanic", "super":"worker"}
+{"key":"engineer", "name":"Engineer", "super":"worker"}
+
+// military personnel
+{"key":"conscript", "name":"Conscript", "super":"soldier", "tag":["soldier"]}
+{"key":"recruit", "name":"Mechanic", "super":"soldier"}
+{"key":"rifleman", "name":"Rifleman", "super":"soldier"}
+{"key":"officer", "name":"Military Officer", "super":"soldier"}
+{"key":"pilot", "name":"Pilot", "super":"soldier"}
+{"key":"gunner", "name":"Gunner", "tag":["soldier"]}
+{"key":"technician", "name":"Equipment Technician", "super":"soldier"}
+
+// clothing
+{"key":"fiber", "name":"Clothing Fibers", "density":5.0, "tag":["fiber","clothing"]}
+{"key":"wool", "name":"Wool", "super":"fiber"}
+{"key":"hemp", "name":"Hemp Fibers", "super":"fiber"}
+{"key":"flax", "name":"Flax Fibers", "super":"fiber"}
+{"key":"cotton", "name":"Cotton Fibers", "super":"fiber"}
+{"key":"silk", "name":"Silk Fibers", "super":"fiber"}
+
+{"key":"clothing", "name":"Clothing", "density":2.0, "tag":["clothing"]}
+{"key":"jeans", "name":"Blue Jeans", "super":"clothing"}
+{"key":"tshirts", "name":"Shirts", "super":"clothing"}
+
+{"key":"corals", "name":"Corals"}
+
+// luxuries
+{"key":"jewelry", "name":"Gold Jewelry"}
+{"key":"antibiotics", "name":"Antibiotics"}
+{"key":"coke", "name":"Cocaine", "tag":["recreation"]}
+{"key":"marijuanan", "name":"Marijuana", "tag":["recreation"]}
+
+// Transgenic
+{"key":"xgen_animals", "name":"Transgenic Animals"}
+{"key":"xgen_crops", "name":"Transgenic Crops"}
+{"key":"xgen_luxuries", "name":"Transgenic Luxuries"}
+{"key":"xgen_bacteria_rx", "name":"Transgenic Bacteria Reactors"}
+{"key":"xgen_enzymes", "name":"Transgenic Enzymes" }
+{"key":"xgen_antibiotics", "name":"Transgenic Antibiotics" }
+{"key":"xgen_immunity_drugs", "name":"Transgenic Immunity_drugs" }
+{"key":"xgen_coral", "name":"Transgenic Coral" }
+{"key":"neuroimplants", "name":"neuroimplants"}
+
+{"key":"tiberium",        "name":"Tiberium",       "density":2, "tag":["tiberium"]}
+{"key":"blue_tiberium",   "name":"Blue Tiberium",  "super":"tiberium"}
+{"key":"green_tiberium",  "name":"Green Tiberium", "super":"tiberium"}
+{"key":"red_tiberium",    "name":"Red Tiberium",   "super":"tiberium"}
+{"key":"white_tiberium",  "name":"White Tiberium", "super":"tiberium"}
+{"key":"yellow_tiberium", "name":"Yellow Tiberium","super":"tiberium"}
+

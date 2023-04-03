@@ -1,0 +1,374 @@
+{"key":"bulk_storage",
+        "name":"Bulk Storage", "mass":10000, "vol":1000, "desc":"empty Space, suitable for storing hardy items",
+        "store":{"bulk":1000}}
+{"key":"liquid_storage",
+        "name":"Liquid Storage", "mass":10000, "volume":1000,
+        "storage":{"liquid":1000}}
+{"key":"open_storage",
+        "name":"Open Storage", "mass":10000, "volume":1000,
+        "storage":{"discrete":1000}}
+{"key":"gas_storage",
+        "name":"Gas Storage", "mass":10000, "volume":1000,
+        "storage":{"gas":1000}}
+
+{"key":"passenger_storage",
+        "name":"Passenger Seats", "mass":5000, "volume":10000,
+        "storage":{"personnel":1000}}
+
+{"key":"ice_furnace",
+        "name":"Volatiles Furnace", "vol":2000, "tags":["raw_materials"],
+        "descr":"Furnace to convert frozen ices into useful liquids and gasses",
+        "process":["melt_water_ice"]}
+{"key":"exped_fab_shop",
+        "name":"Expeditionary Fabrication Shop", "vol":1000, "tags":["industrial"],
+	"process":["make_basic_hand_tools"]}
+{"key":"exped_food_factory",
+        "name":"Expeditionary Food Factory", "vol":1000, "tags":["food","agricultural"],
+	"process":["grow_algae"]}
+
+{"key":"crude_chemical_reactor",
+        "name":"Crude Chemical Reactor", "volume":2000, "tags":["chemical","industrial"]}
+        //"process":["make_chemicals"]}
+{"key":"precision_chemical_reactor",
+        "name":"Precision Chemical Reactor", "vol":2000, "desc":"",
+        "tags":["chemical","industrial"]}
+        //"process":["make_chemicals"]}
+{"key":"o2_generator",
+        "name":"O2 Generator", "vol":250, "tag":["habitation","life_support"]}
+{"key":"co2_scrubber",
+        "name":"CO2 Scrubber", "vol":250, "tag":["habitation","life_support"],
+        "process":["scrub_co2"]}
+
+{"key":"habitation_camp_dorm",
+        "name":"Makeshift Housing", "vol":1000, "tag":["habitation","housing"],
+        "storage":{"housing":15}}
+{"key":"habitation_tenement_dorm",
+        "name":"Cramped Tenement Housing", "volume":1000, "tag":["habitation","housing"],
+        "storage":{"housing":25}}
+{"key":"habitation_comfortable_apartment",
+        "name":"Comfortable Apartment Housing", "volume":1000, "tag":["habitation","housing"],
+        "storage":{"housing":12}}
+{"key":"habitation_luxurious_apartment",
+        "name":"Luxurious Apartment", "volume":1000, "desc":"", "tag":["habitation","housing"],
+        "storage":{"housing":4}}
+{"key":"habitation_penthouse_apartment",
+        "name":"Penthouse", "vol":2500, "desc":"", "tag":["habitation","housing"],
+        "storage":{"housing":4}}
+
+{"key":"engine_workshop",
+        "name":"Engine Workshop", "vol":2000, "desc":"working with internal combustion engines",
+        "tags":["industrial"],
+        "process":["assemble_piston_engine_5kw",
+                   "assemble_generator_5kw",
+                   "assemble_electric_motor_5kw"]}
+{"key":"turbine_workshop",
+        "name":"Turbine Workshop", "vol":2000, "desc":"Manufactures Turbines, Jets", "tags":["industrial"],
+	"process":["assemble_gas_turbine_2mw"]}
+{"key":"battery_workshop", "name":"Battery Cell Workshop", "vol":2000, "desc":"manufacture reactors, batteries, and feul cells","tags":["industrial"],
+        "process":["build_fuel_cells",
+                    "build_lipo_batteries",
+                    "build_nimh_batteries"]}
+{"key":"welding_shop", "name":"Welding Shop", "vol":2000, "desc":"enables ground vehicle chassis manufacture", "tags":["industrial"],
+        "process":["weld_chassis_light_road_auto",
+                    "weld_chassis_light_road_truck",
+                    "weld_chassis_medium_road_truck",
+                    "weld_chassis_heavy_road_truck"]}
+{"key":"forging_press", "name":"Forging Press", "vol":2000, "desc":"chassis prereq", "tags":["industrial"],
+        "process":["forge_chassis_light_road_auto",
+                    "forge_chassis_light_road_truck",
+                    "forge_chassis_medium_road_truck",
+                    "forge_chassis_heavy_road_truck"]}
+{"key":"precision_frame_press", "name":"Precision Frame Press", "vol":2000}
+
+{"key":"construction_block_press",
+        "name":"Construction Block Press", "vol":2000, "desc":"", "tag":["industrial","construction"],
+        "process":["press_construction_blocks"]}
+{"key":"ceramic_kiln",
+        "name":"Ceramics Kiln", "vol":2000, "desc":"Composites Manufacture", "tag":["composites"],
+        "process":["smelt_glass","smelt_ceramics",
+                   //"cure_composites"]}
+                   "smelt_silicon_wafers","smelt_germanium_wafers",
+                   "bake_bricks"]}
+    
+{"key":"graduation_hall",
+        "name":"Graduation Hall", "vol":2000, "desc":"Assembly point for trained infantry", "tags":["industrial"],
+        "process":["assemble_infantry"]}
+{"key":"assembly_garage",
+        "name":"Assembly Garage", "vol":2000, "desc":"Assembles ground vehicles", "tags":["industrial"],
+        "process":["assemble_vehicles"]}
+{"key":"assembly_shipyard",
+        "name":"Assembly Dock", "vol":2000, "desc":"Assembles Naval Units", "tags":["industrial"],
+        "process":["assemble_ships"]}
+{"key":"assembly_bay",
+        "name":"Assembly Bay", "vol":2000, "desc":"assembly of air and ground vehicles", "tags":["industrial"]}
+{"key":"assembly_hangar",
+        "name":"Air Field Assembly Hangar", "desc":"assembly of air vehicles", "tags":["industrial"],
+        "process":["assemble_aircraft"]}
+
+{"key":"agriculture_lab", "name":"Agriculture Lab", "vol":5000, "tag":["agricultural","research"]}
+{"key":"electronics_lab", "name":"Electronics Lab", "vol":5000, "tag":["electronics","research"]}
+{"key":"computer_lab", "name":"Computation Lab", "vol":5000, "tag":["electronics","research"]}
+{"key":"prototype_lab", "name":"Rapid Prototyping Lab", "vol":5000, "tag":["industrial","research"]}
+{"key":"chemistry_lab", "name":"Chemistry Lab", "vol":5000, "tag":["chemistry","research"]}
+{"key":"metal_lab",   "name":"Metals Lab", "vol":5000, "tag":["chemistry","industrial","research"]}
+{"key":"ceramic_lab", "name":"Ceramics Lab", "vol":5000, "tag":["industrial","research","ceramic"]}
+{"key":"polymer_lab", "name":"Polymer Lab", "vol":5000, "tag":["industrial","research"]}
+{"key":"optics_lab",  "name":"Optics Lab", "vol":5000, "tag":["research"]}
+{"key":"spintronics_lab", "name":"Spintronics Lab", "vol":5000, "tag":["research"]}
+{"key":"quantum_lab", "name":"Quantum Materials Lab", "vol":5000, "desc":"aka Nanomaterials: CNTS, MEMS, quantum dots", "tag":["quantum","research"]}
+{"key":"genetic_lab", "name":"Genetics Lab", "vol":5000, "desc":"description?", "tag":["genetics","research"]}
+{"key":"medical_lab", "name":"Medical Lab", "vol":5000, "tag":["medicine","research"]}
+{"key":"physics_lab", "name":"High-Energy Physics Lab", "vol":5000, "tag":["research"]}
+{"key":"combustion_lab", "name":"Combustion Lab", "vol":5000, "desc":"engine, turbine, jet, explosives research", "tag":["research"]}
+{"key":"magnetics_lab", "name":"Magnetics Lab", "vol":2000, "desc":"<placeholder>", "tag":["research"]}
+
+{"key":"emergency_clinic", "name":"Emergency Clinic", "vol":2000, "desc":"" }
+{"key":"autoclinic", "name":"Autoclinic", "vol":2000, "desc":"" }
+{"key":"Hospital", "name":"Hospital", "vol":2000, "desc":"also includes research, higher capacity, higher quality"}
+
+{"key":"cantina", "name":"Cantina", "vol":2000, "desc":"" }
+
+{"key":"cafeteria", "name":"Cafeteria", "vol":2000, "desc":"" }
+
+{"key":"shopping_mall", "name":"", "vol":2000, "desc":"" }
+
+{"key":"entertainment_district", "name":"Entertainment District", "vol":2000, "desc":"" }
+
+{"key":"red_light_district", "name":"Red Light District", "vol":2000, "desc":"" }
+
+{"key":"restaurants", "name":"Restaurant Neighborhood", "vol":2000, "desc":"" }
+
+{"key":"athletic_facility", "name":"Athletic Facility", "vol":2000, "desc":"" }
+{"key":"recr_drug_clinic", "name":"Recreational Drug Clinic", "vol":2000, "desc":"" }
+
+{"key":"algae_growth_monitor", "name":"Algae Growth Controller", "vol":100}
+{"key":"algae_tank", "name":"Algae Tank", "vol":400}
+{"key":"basic_farm_house", "name":"Simple Farm", "vol":2000, "desc":"" }
+{"key":"basic_farm_field", "name":"Simple Farm", "vol":2000, "desc":"" }
+{"key":"hydroponic_farm_center", "name":"Hydroponic Farm", "vol":2000, "desc":""}
+{"key":"hydroponic_farm_field", "name":"Hydroponic Farm", "vol":2000, "desc":""}
+{"key":"aqua_farm_center", "name":"Aquatic Farm", "vol":2000, "desc":""}
+{"key":"aqua_farm_tray", "name":"Aquatic Farm", "vol":2000, "desc":""}
+{"key":"ensemble_farm_center", "name":"Ensemble Farm", "vol":2000, "desc":""}
+{"key":"ensemble_farm_field", "name":"Ensemble Farm", "vol":2000, "desc":""}
+    
+{"key":"hydrocarbon_furnace", "name":"Feul Combustion Turbine", "vol":2000,
+	                   "process":["burn_biomass_1mw",
+                                      "burn_timber_1mw",
+                                      "burn_coal_1mw",
+                                      "burn_oil_1mw",
+                                      "boil_steam"]}
+{"key":"steam_turbine_1mw",
+        "name":"Solar Power Segment", "vol":500,
+        "process":["generate_power_from_steam"]}
+
+{"key":"fission_power_plant_1gw",
+        "name":"Thorium Power Plant", "vol":80000,
+	"process":["react_fission_1gw"]}
+{"key":"fusion_power_plant_1gw",
+        "name":"Fusion Power Plant", "vol":80000,
+	"process":["react_fusion_1gw"]}
+{"key":"solar_power_1mw",
+        "name":"Solar Power Segment", "vol":2000,
+        "process":["generate_power_from_solar_1mw"]}
+{"key":"wind_turbine_1mw",
+        "name":"Wind Turbine", "vol":2000, "desc":"",
+        "process":["generate_power_from_wind_1mw"]}
+{"key":"water_turbine_1mw",
+        "name":"Water Turbine", "vol":2000,
+	"process":["generate_power_from_water_1mw"]}
+
+{"key":"nimh_battery_bank",
+        "name":"Battery Bank Storage", "vol":2000,
+        "storage":{"power":1000}}
+{"key":"lipo_battery_bank",
+        "name":"Battery Bank Storage", "vol":2000, "desc":"",
+        "storage":{"power":2500}}
+{"key":"flywheel",
+        "name":"Flywheel Energy Storage", "vol":2000, "desc":"",
+        "storage":{"power":2500}}
+{"key":"nanowire_battery",
+        "name":"Nanowire Energy Storage", "vol":2000, "desc":"",
+        "storage":{"power":2500}}
+{"key":"singularity_battery",
+        "name":"Singularity Power Storage", "vol":2000, "desc":"",
+        "storage":{"power":2500}}
+    
+{"key":"uhf_comm_relay",
+        "name":"UHF Communications Relay", "vol":2000}
+{"key":"ka_com_relay",
+        "name":"K-Band Communications Relay", "vol":2000}
+{"key":"laser_comm_relay",
+        "name":"Laser Communications Relay", "vol":2000}
+
+{"key":"radar_array_5kw", "name":"Targeting Radar", "vol":2000}
+{"key":"radar_array_25kw", "name":"Theater Radar", "vol":2000}
+{"key":"radar_array_5mw", "name":"Strategic Radar", "vol":2000}
+
+{"key":"ew_rx", "name":"Electronic Warfare Receiver", "vol":20}
+{"key":"ir_scope", "name":"Optical Tracking Sensor", "vol":20}
+        //"process":["optical_sense":1,"infrared_sense":1}}
+{"key":"eo_scope", "name":"Optical Tracking Sensor", "vol":20}
+        //"process":["optical_sense":50}}
+
+{"key":"freight_loader", "name":"Freight Loader", "vol":2000}
+{"key":"autoloader", "name":"Automatic Container Loader", "vol":2000}
+
+{"key":"drill_cart", "name":"Drill Cart", "vol":2000, "desc":"mining equipment.",
+        "tags":["mining"]}
+        //"process":["mining"]}
+{"key":"boreworm", "name":"Mining Bore Worm", "vol":2000, "desc":"automated mining equipment.",
+        "tags":["mining"]}
+        //"process":["mining"]}
+
+{"key":"rock_crusher", "name":"Rock Crusher", "vol":2000, "desc":"",
+        "tags":["mining","industrial"]}
+
+{"key":"vacuum_smelter", "name":"Vacuum Smelter", "vol":2000, "desc":"Modern, Robust metel smelter",
+        "tags":["metal","industrial"],
+        "process":["smelt_carbon_steel"]}
+
+{"key":"oxygen_smelter", "name":"Oxygen Smelter", "vol":2000, "desc":"More efficient metal smelter",
+        "tags":["metal","industrial"],
+        "process":["smelt_carbon_steel"]}
+
+{"key":"vortex_smelter", "name":"Vortex Smelter" , "vol":2000, "desc":"Advanced Metal Smelter",
+        "tags":["metal","industrial"],
+        "process":["smelt_carbon_steel"]}
+
+{"key":"alloy_furnace", "name":"Alloy Furnace", "vol":2000, "desc":"Alloy Metal Smelter",
+        "tags":["metal","industrial"],
+        "process":["smelt_alloy_steel"]}
+
+{"key":"density_refiner",
+        "name":"Density Refiner", "vol":2000, "desc":"",
+        "tags":["metal","industrial"]}
+{"key":"recycle_smelter",
+        "name":"Electric Arc Furnace", "vol":2000, "desc":"",
+        "tags":["metal","industrial"]}
+        // "process":["metal_recycle":1}}
+{"key":"continuous_caster",
+        "name":"Continuous Caster", "vol":2000, "desc":"produce metal items (ingot)",
+        "tags":["metal","industrial"]}
+        //"process":["metal_ingot":1}}
+{"key":"rolling_forge",
+        "name":"Rolling Forge", "vol":2000, "desc":"produce metal items (plates/pipes/beams)",
+        "tags":["metal","industrial"]}
+        //"process":["metal_ingot":1}}
+{"key":"continuous_caster",
+        "name":"Continuous Caster", "vol":2000, "desc":"",
+        "tags":["metal","industrial"]}
+        //"process":["metal_ingot":1}}
+{"key":"tool_stamp_shop",
+        "name":"Tool Stamping Shop", "vol":2000, "desc":"Tool Manufacture",
+        "tags":["metal","industrial"]}
+        //"process":["tools":1]}
+{"key":"tool_form_shop",
+        "name":"Tool Forming Shop", "vol":2000, "desc":"Upgrade. Tool Manufacture",
+        "tags":["industrial"]}
+            //"process":["}
+{"key":"microchip_production",
+        "name":"Semiconductor Fabrication Line" , "vol":2000, "desc":"Microchip production",
+        "tags":["electronics","industrial"],
+        "process":["etch_silicon_chips", "etch_germanium_chips"]}
+{"key":"solder_line",
+        "name":"Surface Mount Solder Line" , "vol":2000, "desc":"create Silicon Wafers",
+        "tags":["electronics","industrial"]}
+{"key":"optronics_production",
+        "name":"Optronics Factory" , "vol":2000, "desc":"create optronics components",
+        "tags":["electronics","industrial"]}
+{"key":"optical_fiber_spinner",
+        "name":"Optical Fiber Spinner" , "vol":2000, "desc":"create fiber optic cable",
+        "tags":["optronics","industrial"]}
+        //"process":["make_optical_fiber"]}
+{"key":"electro_optics_shop",
+        "name":"Electro-Optics Shop" , "vol":2000, "desc":"produce optical sensors (camera, telescope, IR, UV)",
+        "tags":["optronics","industrial"]}
+        //"process":["make_optics"]}
+{"key":"magnetic_forge",
+        "name":"Magnetics Forge", "vol":2000, "desc":"produces magnet",
+        "tags":["industrial"]}
+
+{"key":"explosives_manufacture",
+        "name":"Explosives mixing shop", "vol":2000, "desc":"produces (solid) explosives",
+        "tags":["ammo","industrial"],
+        "process":["make_rocket_propellant", "make_explosive_charges", "make_gunpowder"]}
+{"key":"projectile_manufacture",
+        "name":"Projectile Casting Shopping", "vol":2000, "desc":"produces projectile ammunition",
+        "tags":["ammo","industrial"],
+        "process":["make_bullet_6mm", "make_bullet_8mm", "make_bullet_12mm",
+                   "make_shell_18mm", "make_shell_35mm", "make_shell_60mm", "make_shell_90mm", "make_shell_120mm"]}
+{"key":"weapons_assembly",
+        "name":"Weapons Assembly Line", "vol":2000, "desc":"produces weapons",
+        "tags":["ammo","industrial"],
+        "process":["make_small_arms"]}
+
+{"key":"weaving_mill",
+        "name":"Weaving Mill", "vol":2000, "desc":"turns fiber into cloth",
+        "tags":["clothing","industrial"],
+        "process":["make_clothes"]}
+{"key":"clothing_shop",
+        "name":"Clothing Factory", "vol":2000, "desc":"turns cloth into clothing.",
+        "tags":["clothing","industrial"],
+        "process":["make_clothes"]}
+{"key":"synthetic_fiber_factory",
+        "name":"Synthetic Fiber Reactor", "vol":2000, "desc":"Creates synthetic fibers (nylon, gore-tex)",
+        "tags":["clothing","industrial"],
+        "process":["make_clothes"]}
+{"key":"weaving_mill",
+        "name":"Weaving Mill", "vol":2000, "desc":"turns fiber into cloth",
+        "tags":["clothing","industrial"],
+        "process":["make_clothes"]}
+
+{"key":"piston_engine_5kw", "name":"Piston Engine (5kW)"}
+{"key":"generator_5kw", "name":"Electrical Generator (5kW)"}
+{"key":"diesel_motor_2400kw", "name":"Diesel Engine (2.4MW)"}
+{"key":"electric_motor_5kw", "name":"Electric Motor (5kW)"}
+{"key":"electric_motor_900kw", "name":"Electric Motor (900kW)"}
+
+{"key":"railgun_50mm", "name":"Medium Railguns"}
+{"key":"railgun_120mm", "name":"Heavy Railguns"}
+{"key":"railgun_100mm", "name":"Howitzer Railguns"}
+
+{"key":"ssm_80mm_launcher", "name":"Missile Launcher (80mm)", "mass":22}
+{"key":"ssm_80mm_katyusha", "name":"Katyusha Rocket", "desc":"High-Explosive, Anti-Personnel, Artillery Rocket"}
+{"key":"atm_120mm_javelin", "name":"Javelin"}
+{"key":"sam_120mm_stinger", "name":"Stinger"}
+{"key":"aam_120mm_sidewinder", "name":"Sidewinder"}
+
+{"key":"demolition_charges",
+        "name":"Demolition Charges", "desc":"Explosive charges, used destroy structures (ex: C4 Charges)", "mass":20,
+        "process":["plant_demolition_charge_5kg"]}
+
+{"key":"assault_rifle_6mm",
+        "name":"Assault Rifle", "desc":"standard infantry rifle (ex:M27 IAR)(cartridge: 5.56x45mm)", "mass":12,
+        "process":["fire_gun_6mm_1r","fire_gun_6mm_3r"]}
+{"key":"squad_machine_gun_6mm",
+        "name":"Squad Machine Gun", "desc":"???? (eg: H&K MG4)(cartridge: 5.56x45mm)","mass":65,
+        "process":["fire_gun_6mm_8r"]}
+{"key":"pistol_8mm",
+        "name":"Pistol Sidearm", "desc":"Generic pistol sidearm (ex Walther PPK)(cartridge: 7.62mmx17mm)", "mass":3}
+{"key":"battle_rifle_8mm",
+        "name":"Battle Rifle", "desc":"more powerful infantry rifle (ex: H&K G3)(cartridge: 7.62mmx51mm", "mass":25}
+{"key":"sniper_rifle_8mm",
+        "name":"AI Sniper Rifle", "desc":"anti-personnel sniper rifle (ex: M50A5)(cartridge: 7.62mmx51mm)", "mass":15}
+{"key":"sniper_rifle_12mm",
+        "name":"AM Sniper Rifle", "desc":"==50cal; anti-material sniper rifle", "mass":54}
+{"key":"machine_gun_12mm",
+        "name":"Vehicle Mounted Machine Gun", "desc":"==50cal==12.7mm; vehicle mounted machine gun (eg: Browning 50cal machine gun aka BMG)", "mass":80}
+{"key":"assault_shotgun_18mm",
+        "name":"Assault Shotgun", "desc":"standard shotgun", "desc":"12-gauge shotgun, with 18.53mm diameter barrel", "mass":20}
+
+{"key":"autocannon_35mm",
+        "name":"Autocannon", "desc":"rapid fire large-caliber cannon.  cross between artillery and a machine gun (eg: Bushmaster III). Usable for ant-ground or anti-air (cartridge: 35x228mm)", "mass":150}
+{"key":"cannon_90mm",
+        "name":"90mm Cannon","desc":"light utility gun: 90 rifled cannon"}
+{"key":"recoilles_rifle_106mm",
+        "name":"Recoilles Rifle", "desc":"no longer in common use?"}
+{"key":"flechette_rifle_106mm", "name":"APFSDS", "desc":"Armour-piercing fin-stablized discarding sabot"}
+{"key":"cannon_120mm",
+        "name":"120mm Cannon", "desc":"standard tank gun; 120mm smoothbore cannon"}
+{"key":"howitzer_155mm",
+        "name":"Howitzer", "desc":"common artillery cannon"}
+
+

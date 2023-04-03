@@ -1,0 +1,48 @@
+
+// infantry
+{"key":"human", "name":"Human", "move":"infantry", "mount":"hand"}
+{"key":"exosuit", "name":"Exo-Suit", "move":"infantry", "mount":"hand"}
+{"key":"cyborg", "name":"Cyborg", "move":"mech", "mount":"hand"}
+{"key":"squad", "name":"Squad of humans", "move":"infantry", "mount":"hand"}
+
+// Road, Wheeled
+{"key":"4wheel", "name":"Base 4-Wheeled Vehicle", "mount":"internal", "move":"wheel" }
+{"key":"commercial_auto", "name":"Sedan", "super":"4wheel", "mass":500, "volume": 120, "super":"4wheel"}
+{"key":"commercial_light_truck", "name":"Pickup Truck", "super":"4wheel", "mass":1000, "volume": 250 }
+{"key":"commercial_medium_truck", "name":"Box Truck", "super":"4wheel", "mass":6500, "volume": 750 }
+{"key":"commercial_heavy_truck", "name":"Semi Truck", "super":"4wheel", "mass":16000, "volume": 1200 }
+
+// All-Terrain Wheeled
+{"key":"light_truck", "name":"Light multi-purpose utility Truck", "super":"4wheel"}
+{"key":"medium_truck", "name":"4WD Utility Truck", "super":"4wheel"}
+{"key":"heavy_truck", "name":"Logistics Truck", "super":"4wheel"}
+
+{"key":"tracked", "name":"Base Tracked Vehicle", "mount": "internal", "move":"track"}
+{"key":"medium_infantry_transport", "name":"Medium APC", "super":"tracked"}
+{"key":"heavy_infantry_transport", "name":"Heavy APC", "super":"tracked"}
+{"key":"medium_tank", "name":"Medium Tank", "mount":["int","turret"], "move":"track"}
+{"key":"main_battle_tank", "name":"Lancer", "super":"tracked"}
+{"key":"heavy_tank", "name":"Bruiser", "super":"tracked"}
+{"key":"logistics_tank", "name":"Logistics Chassis", "super":"tracked"}
+
+// All-Terrain Mechanical Legged
+{"key":"light_mech", "name":"Light Mech Chassis", "move":"legged"}
+
+// trains
+{"key":"rail", "name":"Base Railroad Vehicle", "mount": "internal", "move":"rail"}
+{"key":"rail_car_12m", "name":"Rail Car Chassis", "desc":"Smaller, 2-axle rail car", "super":"rail"}
+{"key":"rail_car_16m", "name":"Rail Car Chassis", "desc":"Medimu, Heavier, 4-axle rail car", "super":"rail"}
+{"key":"rail_car_20m", "name":"Rail Car Chassis", "desc":"Larger, Lighter, 4-axle rail car", "super":"rail"}
+{"key":"rail_locomotive_24m", "name":"Rail Locomotive Chassis", "desc":"Huge Freight Locomotive. 6-axle (C-C) Chassis", "mass":2000, "super":"rail"}
+
+// aircraft
+{"key":"hornet","name":"Hornet", "move":"helo"}
+{"key":"albatross","name":"Albatross", "move":"plane"}
+
+// boats
+{"key":"inflatable", "name":"Inflatable Boat", "desc":"Tiny, inflatable boat, w/outboard motor.  Carries 3 people / 250kg", "move":"sea"}
+{"key":"river_patrol_boat", "name":"Riverine Patrol Boat", "length":10}
+{"key":"small_ferry", "name":"Landing Craft", "length":20, "desc":"Carries up to two vehicles or 2500kg, and can offload it at a dock or beach."}
+{"key":"offshore_support", "name":"Offshore Support Vessel", "length":60, "desc":"Carries a cargo supplies, vehicles, or people.  May also be used as a command post."}
+{"key":"coastal_freighter", "name":"Coastal Freighter", "length":60, "desc":"Carries a fair amount of bulk cargo; requires a pier to load/unload"}
+

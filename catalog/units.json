@@ -1,0 +1,66 @@
+{"key":"person",   "name":"Generic Human", "platform":"human", "desc":"Healthy Adult Human"}
+{"key":"civilian", "name":"Civilian", "plat":"human", "desc":"A Harmless Civilian"}
+{"key":"farmhand", "name":"Farmhand", "plat":"human"}
+{"key":"partisan", "name":"Partisan", "plat":"human", "desc":"A Harmful Civilian", "mod":{"assault_rifle_6mm":1}}
+{"key":"guerilla", "name":"Guerrilla", "plat":"human", "desc":"A Harmful Civilian", "mod":{"demolition_charges":1}}
+
+    // basic infantry
+{"key":"conscript", "name":"Conscript Soldier", "super":"person"}
+{"key":"scout",     "name":"Scout", "super":"person"}
+{"key":"rifleman",  "name":"Rifleman", "super":"person", "mod":{"assault_rifle_6mm":1}}
+{"key":"officer",   "name":"Platoon Commander", "super":"person", "mod":{"assault_rifle_6mm":1}}
+
+{"key":"combat_mechanic", "name":"Mechanic", "plat":"human"}
+{"key":"combat_engineer", "name":"Engineer", "plat":"human"}
+{"key":"combat_medic",    "name":"Medic",    "plat":"human"}
+
+    // specialized infantry
+{"key":"personnel-sniper",    "name":"Sniper", "plat":"human", "mod":{"sniper_rifle_8mm":1}}
+{"key":"support-sniper",      "name":"Sniper", "plat":"human", "mod":{"sniper_rifle_12mm":1}}
+{"key":"machine_gunner",      "name":"Machine Gunner", "plat":"human", "mod":{"squad_machine_gun_6mm":1}}
+{"key":"anti-armor_missileer","name":"AT Missiler", "plat":"human", "mod":{"atm_120mm_javelin":1}}
+{"key":"anti-air_missileer",  "name":"AA Missileer", "plat":"human", "mod":{"sam_120mm_stinger":1}}
+
+    // road vehicles
+{"key":"light_road_auto",  "name":"Simple Sedan Truck", "platform":"commercial_auto", "desc":"Generic Small Car.  Can hold 4 people / 250kg"}
+{"key":"light_road_truck", "name":"Pickup Truck", "platform":"commercial_light_truck", "desc":"Generic Pickup Truck, probably a Toyota HiLux -- cargo: ~500kg"}
+{"key":"medium_road_truck","name":"Box Truck", "platform":"commercial_medium_truck", "desc":"medium sized, generic utility truck. 5000kg Capacity"}
+{"key":"heavy_road_truck", "name":"Semi Truck", "platform":"commercial_heavy_truck", "desc":"large, heavy, long range truck.  ~20k kg capacity"}
+
+{"key":"light_transport", "name":"Light utility Truck", "platform":"light_transport"}
+{"key":"medium_transport","name":"Medium Utility Truck", "platform":"medium_transport"}
+{"key":"heavy_transport", "name":"Logistics Truck", "platform":"heavy_transport"}
+
+{"key":"recon_truck", "name":"Innocuous Vehicle", "platform":"commercial_light_truck"}
+{"key":"scout_humvee","name":"Scout Humvee", "platform":"light_truck"}
+{"key":"scout_mech",  "name":"Grasshopper Scout Mech", "platform":"light_mech"}
+
+{"key":"technical_truck","name":"Technical", "platform":"commercial_light_truck", "mod":{"machine_gun_12mm":1}}
+{"key":"skirmish_humvee","name":"Skirmish Humvee", "platform":"light_truck", "mod":{"machine_gun_12mm":1,"eo_scope":1,"ir_scope":1,"ew_rx":1}}
+{"key":"strike_humvee",  "name":"Strike Humvee", "platform":"light_truck", "mod":{"atm_120mm_javelin":1,"ir_scope":1}}
+
+{"key":"stryker", "name":"Stryker", "platform":"medium_infantry_transport", "mod":{"autocannon_35mm":1}, "desc":"mass:5000"}
+{"key":"bradley", "name":"Bradley", "platform":"heavy_infantry_transport", "mod":{"autocannon_35mm":1}, "desc":"mass:8000"}
+{"key":"medium_tank_mk1", "name":"Skirmish Tank", "platform":"medium_tank", "mod":{"autocannon_35mm":1}, "desc":"mass:12000"}
+{"key":"battle_tank_mk1", "name":"Salvaged Tank", "platform":"main_tank", "mod":{"cannon_120mm":1}}
+{"key":"battle_tank_mk2", "name":"Main Battle Tank", "platform":"main_battle_tank", "mod":{"cannon_120mm":1,"autoloader":1}}
+{"key":"battle_tank_mk3", "name":"Battle Tank Mk3", "platform":"main_battle_tank", "mod":{"cannon_120mm":1,"autoloader":1,"ir_scope":1}}
+{"key":"sniper_tank", "name":"Sniper Tank", "platform":"main_battle_tank", "mod":{"railgun_50mm":1,"autoloader":1,"ir_scope":1}}
+
+{"key":"radar_station", "name":"Radar Truck", "platform":"medium_truck", "mod":{"radar_array_5kw":1}}
+{"key":"aa_battery", "name":"Missile Truck", "platform":"medium_truck", "desc":"2x AA Radar-Guided missilles", "mod":{"sam_120mm_stinger":4}}
+
+{"key":"artillery", "name":"Self-propelled artillery", "platform":"light_tank", "mod":{"howitzer_155mm":1}, "desc":"155m ballistic howitzer"}
+{"key":"barrage_artillery", "name":"Missile Truck", "platform":"medium_truck", "mod":{"ssm_80mm_launcher":12}, "desc":"24x HE Rockets"}
+
+// trains
+{"key":"locomotive_5400kW", "name":"Heavy Freight Locomotive", "platform":"rail_locomotive_24m", "mod":{"electric_motor_900kw":6}}
+{"key":"locomotive_4800kw", "name":"Long Range Freight Locomotive", "platform":"rail_locomotive_24m", "mod":{"diesel_motor_2400kw":2,"electric_motor_900kw":6}}
+{"key":"locomotive_2400kw", "name":"Local Diesel Locomotive","platform":"rail_car_16m", "mod":{"diesel_motor_2400kw":1,"electric_motor_900kw":4}}
+{"key":"locomotive_1800kw", "name":"Switcher Locomotive","platform":"rail_car_16m", "mod":{"electric_motor_900kw":2}}
+{"key":"flatbed_carriage", "name":"Flatbed Car", "platform":"rail_car_16m", "mod":{"open_storage":100}}
+{"key":"personnel_carriage", "name":"Passenger Car", "platform":"rail_car_20m", "mod":{"passenger_storage":48}}
+{"key":"liquid_carriage", "name":"Tank Car", "platform":"rail_car_16m", "mod":{"liquid_storage":120}}
+{"key":"bulk_carriage", "name":"Bulk Car", "platform":"rail_car_16m", "mod":{"bulk_storage":120}}
+{"key":"box_carriage", "name":"Box Car", "platform":"rail_car_16m", "mod":{"open_storage":100}}
+

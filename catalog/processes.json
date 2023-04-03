@@ -1,0 +1,240 @@
+{"key":"scrub_co2", "name":"Scrub Carbon Dioxide", "tag":["habitation"], "io":{"co2": -2, "power":-4}}
+{"key":"mill_lumber", "name":"Mill Lumber", "io":{"timber":-1, "lumber":1}}
+
+{"key":"burn_biomass_1mw", "name":"Burn Biomass", "tag":["combustion"], "io":{"oxygen": -2, "biomass":-1, "co2":1, "heat": 5.0}}
+{"key":"burn_coal_1mw", "name":"Burn Coal", "tag":["combustion"], "io":{"oxygen": -2, "coal":-1, "co2":1, "heat": 5.0}}
+{"key":"burn_oil_1mw", "name":"Burn Oil", "tag":["combustion"], "io":{"oxygen": -2,"fuel_oil":-1, "co2":1, "heat": 5.0}}
+{"key":"burn_timber_1mw", "name":"Burn Timber", "tag":["combustion"], "io":{"oxygen": -2, "timber":-1, "co2":1, "heat": 5.0}}
+{"key":"react_fission_1gw", "name":"Operate Nuclear Fission Reactor (1GW)", "tag":["electricity"], "io":{"power": 1000000.0 }}
+{"key":"react_fusion_1gw", "name":"Operate Nuclear Fusion Reactor (1GW)", "tag":["electricity"], "io":{"power": 1000000.0 }}
+
+{"key":"cooling", "name":"Cooling", "io":{"heat":-1}}
+{"key":"melt_water_ice", "name":"Melt Water Ice", "io":{"water_ice":-1, "heat":-1, "water":1}}
+{"key":"melt_methane_ice", "name":"Melt Methane Ice", "io":{"methane_ice":-1, "heat":-1, "water":1}}
+{"key":"melt_dry_ice", "name":"Melt Dry Ice", "io":{"dry_ice":-1, "heat":-1, "water":1}}
+
+{"key":"generate_power_from_water_1mw", "name":"Generate (Water) Power", "tag":["electricity"], "io":{"power": 1000.0 }}
+{"key":"generate_power_from_wind_1mw", "name":"Generate (Wind) Power", "tag":["electricity"], "io":{"power": 1000.0 }}
+{"key":"generate_power_from_biopower_1mw", "name":"Generate BioPower", "tag":["electricity"], "io":{"oxygen": -1,"light": -1, "co2":1, "power":1000.0}}
+{"key":"generate_power_from_solar_1mw", "name":"Generate (Solar) Power", "tag":["electricity"], "io":{"power": 1000.0, "light": -1.0}}
+
+{"key":"boil_steam", "name":"Generate Steam", "io":{"heat":-1,"water":-5,"steam":5}}
+{"key":"generate_power_from_steam", "name":"Generate Steam Power", "tag":["electricity"], "io":{"steam":-1,"power":50}}
+
+{"key":"press_construction_blocks", "name": "Press Construction Blocks", "tag":["industrial","infrastructer"]}
+{"key":"bake_bricks", "name":"Bake Bricks", "tag":["industrial","infrastructer"]}
+
+{"key":"sell_tiberium", "name": "Sell Tiberium", "tag":["tiberium"], "io":{"tiberium": -1.0, "credits": 70.0}}
+{"key":"refine_blue_tiberium", "name": "Refine Blue Tiberium", "tag":["tiberium"], "io":{"blue_tiberium": -1.0,  "co_ore":0.4, "cr_ore":0.2, "mg_ore":0.1, "mn_ore":0.1, "mo_ore":0.1, "li_ore":0.9}}
+{"key":"refine_green_tiberium", "name": "Refine Green Tiberium", "tag":["tiberium"], "io":{"green_tiberium": -1.0, "cu_ore":0.7, "fe_ore":0.4, "mg_ore":0.1, "mn_ore":0.1}}
+{"key":"refine_red_tiberium", "name": "Refine Red Tiberium", "tag":["tiberium"], "io":{"red_tiberium": -1.0,   "fe_ore":0.1, "mg_ore":0.2, "cu_ore":0.1}}
+{"key":"refine_white_tiberium", "name": "Refine White Tiberium", "tag":["tiberium"], "io":{"white_tiberium": -1.0, "al_ore":0.8, "ti_ore":0.4, "li_ore":0.3}}
+{"key":"refine_yellow_tiberium", "name": "Refine Yellow Tiberium", "tag":["tiberium"], "io":{"yellow_tiberium": -1.0,"au_ore":0.8, "co_ore":0.4, "li_ore":0.1}}
+
+{"key":"smelt_gold", "name":"Smelt Gold", "io":{ "au_ore":-1, "au_ingot":1.0}}
+{"key":"smelt_aluminum", "name":"Smelt Aluminum", "io":{"al_ore":-1.0, "mg_ore":-0.1, "al_ingot":1}}
+{"key":"smelt_iron", "name":"Smelt Iron", "tag":["steel"], "io":{"fe_ore":-1, "iron_ingot":1}}
+{"key":"smelt_alloy_steel", "name":"Smelt Carbon Steel", "tag":["steel"],
+            "io": {"carbon_steel_ingot":-1.0, "mo_ore":-0.05, "mn_ore":-0.05,"alloy_steel_ingot":1.0}, "desc":" https://en.wikipedia.org/wiki/Alloy_steel; https://www.thoughtco.com/steel-grades-2340174"}
+{"key":"smelt_carbon_steel", "name":"Smelt Carbon Steel", "tag":["steel"],
+            "io":{"iron_ingot":-1.0, "carbon":-0.1, "carbon_steel_ingot":1.0}}
+{"key":"smelt_stainless_steel", "name":"Smelt Stainless Steel", "tag":["steel"],
+            "io":{"carbon_steel_ingot":-1, "cr_ore":-0.1, "stainless_steel_ingot":1.0}}
+{"key":"smelt_tool_steel", "name":"Smelt Tool Steel", "tag":["steel"],
+            "io":{"carbon_steel_ingot":-1, "cr_ore":-0.2, "mo_ore":-0.1, "w_ore":-0.05, "tool_steel_ingot":1}}
+
+{"key":"smelt_silicon_wafers",
+            "name":"Fabricate Silicon Wafers", "tag":["electronics"],
+            "io":{"si_ore":-1, "cu_ore":-0.2, "si_wafer":1.0, "time":-20, "power":-20}}
+{"key":"smelt_germanium_wafers",
+            "name":"Fabricate Germanium Wafers", "tag":["electronics"],
+            "io":{"ge_ore":-1, "cu_ore":-0.2, "ge_wafer":1.0, "time":-20, "power":-20}}
+
+{"key":"etch_silicon_chips",
+            "name":"Smelt Silicon Chips", "tag":["electronics"],
+            "io":{"si_wafer":-1, "si_chip":1.0, "time":-20, "power":-20}}
+{"key":"etch_germanium_chips",
+            "name":"Smelt Germanium Chips", "tag":["electronics"],
+            "io":{"ge_wafer":-1, "ge_chip":1.0, "time":-20, "power":-20}}
+
+{"key":"smelt_glass",
+            "name":"Smelt Glass", "tag":["industrial","ceramic"],
+            "io":{"time":-20, "power":-60, "si_ore":-10, "glass":2, "ca_ore":-1.0, "sodium_carbonate":-2.0, "mg_ore":-0.1, "al_ore":-0.1}}
+{"key":"smelt_ceramics",
+            "name":"Smelt Ceramics", "tag":["industrial","ceramic"],
+            "io":{"time":-20, "power":-60, "si_ore":-10, "ceramic":2, "ca_ore":-1.0, "sodium_carbonate":-2.0, "mg_ore":-0.1, "al_ore":-0.1}}
+
+{"key":"refine_bio_plastics", "name":"Make Agricultural Plastics", "io":{"carbon":-1,"plastic":1, "time":20}}
+{"key":"refine_fossil_plastics", "name":"Make Hydrocarbon Plastics", "io":{"crude_oil":-1,"plastic":1, "time":20}}
+
+{"key":"make_basic_hand_tools", "name":"Build Basic Tools", "tag":["tools"], "io":{"iron_ingot":-1, "lumber":-0.5, "basic_hand_tools":10}}
+{"key":"make_power_tools", "name":"Build Power Tools", "tag":["tools"], "io":{"tool_steel_ingot":-1, "cu_ore":-0.2, "plastic":-0.6, "power_tools":10}}
+{"key":"make_heavy_tools", "name":"Build Heavy Tools", "tag":["tools"], "io":{"carbon_steel_ingot":-1, "tool_steel_ingot":-1, "heavy_tools":4}}
+{"key":"make_automated_tools", "name":"Build Automated Tools", "tag":["tools"], "io":{"carbon_steel_ingot":-1, "tool_steel_ingot":-1, "si_chip":-0.2, "automated_tools":4}}
+{"key":"make_robotic_tools", "name":"Build Robotic Tools", "tag":["tools"], "io":{"carbon_steel_ingot":-1, "tool_steel_ingot":-1, "si_chip":-0.2, "robotic_tools":4}}
+
+{"key":"make_explosive_charges",
+            "name":"Manufacture Explosive", "tag":["industrial","weapons"], 
+            "io":{"biomass":-1,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_explosive_charge":5}}
+{"key":"make_gunpowder",
+            "name":"Manufacture Gunpowder", "tag":["industrial","weapons"], 
+            "io":{"biomass":-1,
+                  "time":-20,
+                  "power":-30,
+                  "explosives_gunpowder":5}}
+{"key":"make_rocket_propellant",
+            "name":"Manufacture Rocket Propellant", "tag":["industrial","weapons"], 
+            "io":{"al_ingot":-1,
+                  "biomass":-1,
+                  "time":-20,
+                  "power":-30,
+                  "propellant_solid_rocket":5}}
+
+{"key":"make_small_arms",
+            "name":"Manufacture Small Arms", "tag":["industrial","weapons"], 
+            "io":{"tool_steel_ingot":1,
+                  "timber":0.5,
+                  "time":20,
+                  "power":30,
+                  "weapon_small_armament":50}}
+
+{"key":"make_bullet_6mm",
+            "name":"Manufacture Small-Caliber Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_bullet_6mm":6000}}
+{"key":"make_bullet_8mm",
+            "name":"Manufacture Small-Caliber Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_bullet_8mm":5000}}
+{"key":"make_bullet_12mm",
+            "name":"Manufacture Small-Caliber Ammunition", "tag":["industrial","weapons"],
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_bullet_12mm":4600}}
+{"key":"make_shell_18mm",
+            "name":"Manufacture Shotgun Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_shell_18mm":4600}}
+{"key":"make_shell_35mm",
+            "name":"Manufacture Medium-Caliber Shell-Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_shell_35mm":2800}}
+{"key":"make_shell_60mm",
+            "name":"Manufacture Medium-Caliber Shell Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_shell_60mm":3200}}
+{"key":"make_shell_90mm",
+            "name":"Manufacture Medium-Caliber Shell Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_shell_90mm":1600}}
+{"key":"make_shell_120mm",
+            "name":"Manufacture Medium-Caliber Shell Ammunition", "tag":["industrial","weapons"], 
+            "io":{"brass_ingot":-1,
+                  "explosives_gunpowder":-5,
+                  "time":-20,
+                  "power":-30,
+                  "ammo_shell_120mm":800}}
+
+{"key":"plant_demolition_charge_5kg",
+            "name":"Plant Demolition Charge (5kg)", "tag":["weapons","combat"],
+            "io":{"ammo_explosive_charge":-5, "time":-5.0}}
+{"key":"fire_gun_6mm_1r",
+            "name":"Fire 6mm bullet", "tag":["weapons","combat"], 
+            "io":{"ammo_bullet_6mm":-1, "time":-1.2}}
+{"key":"fire_gun_6mm_3r",
+            "name":"Fire 6mm bullet", "tag":["weapons","combat"], 
+            "io":{"ammo_bullet_6mm":-3, "time":-1.2}}
+{"key":"fire_gun_6mm_8r",
+            "name":"Fire 6mm bullet", "tag":["weapons","combat"], 
+            "io":{"ammo_bullet_6mm":-8, "time":-0.8, "heat":0.01}}
+
+//    // piston engines -- multifuel -- diesel / gasoline / kerosene / other"
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_5kW    // ~200cc engine; tiny utility engines, tiny generators"}
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_100kW  // ~1-5L engine; motorcycles, snowmobiles, small UAV, jeep, HMMMV, etc"}
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_160kW  // semi-truck, light/medium supply trucks"}
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_400kW  // large trucks, large equipment, small generators,"}
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_900kW  // Challenger Tank"}
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_12MW   // small frigates, LCS, etc"}
+//     "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> piston_engine_80MW   // https://en.wikipedia.org/wiki/W%C3%A4rtsil%C3%A4-Sulzer_RTA96-C "}
+
+//    "na", "name":"", "desc":"// turbine (mostly gas turbine)"}
+//    "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> turbine_1MW   // Abrams Tank"}
+//    "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> turbine_3MW   // https://www.rolls-royce.com/products-and-services/defence/naval/gas-turbines/ag9140-generator-set.aspx; 3x per arleigh-burke"}
+//    "na", "name":"", "desc":"steel_ingot, iron_ingot, al_ingot -> turbine_20MW      // https://en.wikipedia.org/wiki/General_Electric_LM2500; 4x per Arleigh-Burke (propulsion)"}
+
+{"key":"assemble_piston_engine_5kw", "name":"Manufacture 5kW Piston Engine", "io":{ "iron_ingot":-1, "carbon_steel_ingot":-1, "piston_engine_5kw":1}}
+{"key":"assemble_gas_turbine_2mw", "name":"Manufacture a 2MW Gas Turbine", "io":{ "iron_ingot":-1, "carbon_steel_ingot":-1, "gas_turbine_2mw":1}}
+
+{"key":"assemble_generator_5kw", "name":"Build Generator", "io":{ "cu_ingot":-1, "carbon_steel_ingot":-1, "electric_generator_5kw":1}}
+{"key":"assemble_electric_motor_5kw", "name":"Build Electric Motor", "io":{"cu_ingot":-1, "carbon_steel_ingot":-1, "electric_motor_5kw":1}}
+
+{"key":"build_lipo_batteries", "name":"Build LiPo Batteries", "io":{"li_ore":-1, "co_ore":-0.1, "cu_ore":-0.2, "batteries_lipo":1}}
+{"key":"build_nimh_batteries", "name":"Build NiMH Batteries", "io":{"ni_ore":-1, "cu_ore":-0.2, "batteries_nimh":1}}
+{"key":"build_fuel_cells", "name":"Build Fuel Cells", "io":{"carbon_steel_ingot":-1, "ceramic":-0.2, "fuel_cell":1}}
+
+{"key":"weld_chassis_light_road_auto", "name":"Weld Commercial Auto Chassis", "io":{"carbon_steel_ingot":-2, "power":-10, "time":-30}}
+{"key":"weld_chassis_light_road_truck", "name":"Weld Pickup Truck Chassis", "io":{"carbon_steel_ingot":-3, "power":-10, "time":-30}}
+{"key":"weld_chassis_medium_road_truck", "name":"Weld Box Truck Chassis", "io":{"carbon_steel_ingot":-5, "power":-10, "time":-60}}
+{"key":"weld_chassis_heavy_road_truck", "name":"Weld Semi Truck Chassis", "io":{"carbon_steel_ingot":-12, "power":-10, "time":-90}}
+
+{"key":"forge_chassis_light_road_auto", "name":"Forge Commercial Auto Chassis", "io":{"carbon_steel_ingot":-2, "power":-10, "time":-10}}
+{"key":"forge_chassis_light_road_truck", "name":"Forge Pickup Truck Chassis", "io":{"carbon_steel_ingot":-3, "power":-10, "time":-10}}
+{"key":"forge_chassis_medium_road_truck", "name":"Forge Box Truck Chassis", "io":{"carbon_steel_ingot":-5, "power":-10, "time":-20}}
+{"key":"forge_chassis_heavy_road_truck", "name":"Forge Semi Truck Chassis", "io":{"carbon_steel_ingot":-12, "power":-10, "time":-30}}
+
+{"key":"assemble_airframe", "name":"Assemble UAV airframe", "io":{"cfrp":-0.8, "plastic":-0.5, "power":-10, "time":-20}}
+
+{"key":"assemble_infantry", "name":"Placeholder Process for assembling specific infantry units"}
+{"key":"assemble_vehicles", "name":"Placeholder Process for assembling specific ground vehicle units"}
+{"key":"assemble_ships",    "name":"Placeholder Process for assembling specific naval units"}
+{"key":"assemble_aircraft", "name":"Placeholder Process for assembling specific air units"}
+
+{"key":"make_spare_parts", "name": "Spare Parts", "tag":["maintenance"]}
+
+{"key":"grow_algae", "name":"Grow Edible Algae", "desc":"Horrid, bland, and tasteless... but nutritious", "tag":["food"],
+                      "io": {"water": -0.1, "light": -0.5, "edible_algae_paste": 1.0, "time": -30.0}}
+{"key":"grow_vegetables", "name":"Grow Vegetables", "tag":["food"], "io": {"water": -0.2, "light": -0.5, "vegetables": 1.0, "time": -30.0}}
+{"key":"grow_grain", "name":"Grow Grain", "tag":["food"], "io": {"water": -0.2, "light": -0.5, "grain": 1.0, "time": -30.0}}
+{"key":"grow_chickens", "name":"Raise Chickens", "tag":["food"], "io": {"water": -0.2, "light": -0.5, "chicken": 1.0, "chicken_eggs":8.0, "time": -30.0}}
+{"key":"grow_cows", "name":"Raise Cows", "tag":["food"], "io": {"water": -0.2, "light": -0.5, "cow": 1.0, "raw_milk":8.0, "time": -60.0}}
+{"key":"grow_goats", "name":"Raise Goats", "tag":["food"], "io": {"water": -0.2, "light": -0.5, "goat": 1.0, "time": -40.0}}
+{"key":"grow_pigs", "name":"Raise Pigs", "tag":["food"], "io": {"water": -0.2, "light": -0.5, "pig": 1.0, "time": -50.0}}
+{"key":"grow_sheep", "name":"Raise Sheep", "tag":["food","clothing"], "io": {"water": -0.2, "light": -0.5, "sheep": 1.0, "wool":12.0, "time": -40.0}}
+
+{"key":"make_clothes", "name":"Make Clothing", "tag":["clothing"], "io": {"wool": -2.0, "labor":0.5, "clothing":25, "time": -10.0}}
+
+{"key":"cook_bread", "name":"Bake Bread", "tag":["food"], "io": {"grain": -1.0, "bread": 1.0, "time": -5.0}}
+{"key":"make_cheese", "name":"Make Cheese", "tag":["food"], "io": {"raw_milk": -1.0, "cheese": 1.0, "time": -6.0}}
+
+{"key":"butcher_chickens", "name":"Raise Chickens", "tag":["food"], "io": {"chicken": -1.0, "chicken_meat":2.0, "time": -2.0}}
+{"key":"butcher_cows", "name":"Raise Cows", "tag":["food"], "io": {"cow": -1.0, "beef": 880.0, "time": -4.0}}
+{"key":"butcher_goats", "name":"Raise Goats", "tag":["food"], "io": {"goat": -1.0, "goat_meat":112.0, "time": -3.0}}
+{"key":"butcher_pigs", "name":"Raise Pigs", "tag":["food"], "io": {"pig": -1.0, "pork":480.0, "time": -3.0}}
+{"key":"butcher_sheep", "name":"Raise Sheep", "tag":["food","clothing"], "io": {"sheep": -1.0, "mutton":112.0, "time": -3.0}}
+
+
+{"key":"refine_oil", "name":"Refine Crude Oil", "tag":["energy","fuel"], "io":{"crude_oil":-1, "gasoline":0.6, "kerosene":0.6, "time":-10.0}}
+
